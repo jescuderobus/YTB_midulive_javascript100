@@ -14,3 +14,51 @@ Este código JavaScript está diseñado para implementar una funcionalidad de ar
 4. **Suscripción a Eventos de Inicio de Arrastre:** El documento escucha los eventos `mousedown` y `touchstart` para iniciar el proceso de arrastre, llamando a `startDrag` cuando estos eventos ocurren.
 
 El código hace uso de varias técnicas importantes en el desarrollo web moderno, como la manipulación de eventos, transformaciones CSS para movimiento y rotación, y la gestión de la interacción táctil versus el uso del mouse. Esta implementación proporciona una experiencia de usuario interactiva y atractiva, común en interfaces donde la decisión rápida (como deslizar hacia la derecha o izquierda para indicar preferencia) es una parte central de la navegación o el flujo de trabajo de la aplicación.
+
+
+### Revisar
+
+Esto NO funciona
+
+```css
+            & .go-left {
+                transform: translateX(-100%) rotate(-20deg) !important;
+                transition: transform .3s ease, rotate .3s ease;
+                
+            }
+
+            & .go-right{
+                transform: translateX(100%) rotate(20deg) !important;
+                transition: transform .3s ease, rotate .3s ease;
+            }
+
+            & .reset{
+                transform: translateX(0) !important;
+                transition: transform .3s ease;
+                
+            }
+```
+
+Esto SI funciona
+
+```css
+      &.go-left {
+        transform: translateX(-150%) rotate(-30deg) !important;
+      }
+
+      &.go-right {
+        transform: translateX(150%) rotate(30deg) !important;
+      }
+
+      &.go-left,
+      &.go-right {
+        transition: transform .3s ease, rotate .3s ease;
+      }
+
+      &.reset {
+        transition: transform .3s ease;
+        transform: translateX(0) !important;
+      }
+```
+
+El problema es el espacio entre el & y el punto

@@ -166,19 +166,21 @@
             height: 100%;
             z-index: 2;
 
-            & .go-left {
+            &.go-left {
                 transform: translateX(-100%) rotate(-20deg) !important;
                 transition: transform .3s ease, rotate .3s ease;
+                
             }
 
-            & .go-rigth{
+            &.go-right{
                 transform: translateX(100%) rotate(20deg) !important;
                 transition: transform .3s ease, rotate .3s ease;
             }
 
-            & .reset{
-                transition: transform .3s ease;
+            &.reset{
                 transform: translateX(0) !important;
+                transition: transform .3s ease;
+                
             }
 
             & .choice{
@@ -262,7 +264,7 @@
         // change the flag to indicate we are animating
         isAnimating=true
         // calculate the rotation of the card using the distance
-        const deg = pullDeltaX / 10
+        const deg = pullDeltaX / 14
         // apply the transformation to the card
         actualCard.style.transform = `translateX(${pullDeltaX}px) rotate(${deg}deg)`
         // change the cursor to grabbing
@@ -286,19 +288,19 @@
             const goLeft = !goRight
 
             // add class acording to the decision
-            actualCard.classList.add(goRight ? 'go-right' : 'go-left')
+            actualCard.classList.add( goRight ? 'go-right' : 'go-left')
             actualCard.addEventListener ('transitionend',() => {
                 actualCard.remove()
             }, {once:true})
-            //console.log('decision hecha')
+            console.log('decision hecha')
         }else{
             actualCard.classList.add('reset')
             actualCard.classList.remove('go-right', 'go-left')
-            //console.log('pensando')
+            console.log('pensando')
         }
 
         // reset the variables
-        actualCard-addEventListener('transitionend',()=>{
+        actualCard.addEventListener('transitionend',()=>{
             actualCard.removeAttribute('style')
             actualCard.classList.remove('reset')
             pullDeltaX = 0

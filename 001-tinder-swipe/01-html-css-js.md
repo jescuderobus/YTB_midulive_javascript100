@@ -40,7 +40,70 @@ El objetivo principal al usar las etiquetas semánticas es usar menos divs
 
 Si consideramos CSS en su totalidad, incluyendo CSS1, CSS2, y todas las actualizaciones de CSS3 más los módulos en desarrollo activo, el número total de propiedades únicas supera las 500. Este número incluye propiedades para estilizar texto, manejar el layout (diseño) de la página, animaciones, interacciones, y aspectos gráficos como filtros y transformaciones.
 
-Las propiedades CSS se clasifican en varias categorías basadas en su función y el aspecto del diseño que modifican. Estas incluyen Texto y Fuentes, para ajustar la apariencia del texto; Diseño, que afecta la disposición de los elementos; Margen y Relleno, que controlan el espacio alrededor y dentro de los elementos; Dimensiones, para definir el tamaño de los elementos; Colores y Fondos, que establecen colores e imágenes de fondo; Bordes, que definen los bordes de los elementos; Efectos Visuales, que añaden sombras y transiciones; Interacción del Usuario, relacionada con la respuesta de los elementos a la interacción del usuario; Animaciones, que permiten crear animaciones; Flexbox y Grid, para diseños complejos y responsivos; y Posicionamiento, que controla la posición de los elementos. Cada categoría abarca propiedades específicas que permiten a los desarrolladores crear estilos detallados y funcionales para las páginas web.
+### Módulos CSS
+
+Diseño de Layout
+
+    CSS Box Model
+    CSS Display Module
+    CSS Flexbox Module
+    CSS Grid Layout Module
+    CSS Multi-column Layout
+    CSS Positioning
+
+Estilo Visual
+
+    CSS Backgrounds and Borders
+    CSS Color
+    CSS Text Decoration
+    CSS Fonts
+    CSS Scrollbars
+
+Interacción y Animación
+
+    CSS Animations
+    CSS Transitions
+    CSS Transforms
+
+Comportamiento Adaptativo
+
+    CSS Media Queries
+    CSS Conditional Rules (incluye @media y @supports)
+
+Elementos de UI
+
+    CSS Basic User Interface (CSS UI)
+    CSS Lists and Counters
+    CSS Tables
+
+Otros Aspectos y Funcionalidades
+
+    CSS Values and Units
+    CSS Cascade and Inheritance
+    CSS Compositing and Blending
+    CSS Masking
+    CSS Shapes
+    CSS Text
+    CSS Text Level 3
+    CSS Writing Modes
+    CSS Logical Properties and Values
+    CSS Generated Content
+    CSS Paged Media
+    CSS Exclusions
+    CSS Image Values and Replaced Content
+    CSS Speech Module
+    CSS Counter Styles
+    CSS Ruby
+    CSS Fragmentation
+    CSS Overflow
+    CSS Containment
+
+Funcionalidades Avanzadas y Experimentales
+
+    CSS Filter Effects
+    CSS Variables (Custom Properties for Cascading Variables Module)
+    CSS Scroll Snap
+    CSS Houdini Worklets
 
 - https://developer.mozilla.org/en-US/docs/Web/CSS/display
 - https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction
@@ -50,19 +113,28 @@ Las propiedades CSS se clasifican en varias categorías basadas en su función y
 - https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
 - https://developer.mozilla.org/en-US/docs/Web/CSS/gap
 - https://developer.mozilla.org/en-US/docs/Web/CSS/cursor
+- https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+- https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+- https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient
+
+### css y espacio entre elementos
 
 - https://developer.mozilla.org/en-US/docs/Web/CSS/inset
 - https://developer.mozilla.org/en-US/docs/Web/CSS/margin
 - https://developer.mozilla.org/en-US/docs/Web/CSS/padding
 
     **margin** controla el espacio exterior alrededor de un elemento.
+
     **padding** controla el espacio interior entre el borde de un elemento y su contenido.
+
     **inset** es una propiedad abreviada que define los desplazamientos de los bordes de un elemento posicionado respecto a su contenedor más cercano, sirviendo un propósito similar a margin y padding pero en el contexto del posicionamiento.
 
-- https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
-- https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
-- https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient
 
+### css nesting
+
+El css nesting de clases requiere que no haya separación entre el & y el . de la clase
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting
 
 ## js
 
