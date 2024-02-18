@@ -24,6 +24,10 @@
                     <div class="choice nope">NOPE</div>
                     <div class="choice like">LIKE</div>
                 </article>
+                <span>
+                    No hay más personas cerca de tí...<br/>
+                    Vuelve a intentarlo más tarde
+                </span>
             </div>
             <footer>
                 <button class="is-undo" aria-label="undo"></button>
@@ -140,6 +144,16 @@
         height: 100%;
         margin: 0 auto;
 
+        & > span {
+            display: grid;
+            place-content: center;
+            color: #777;
+            font-size: 14px;
+            text-align: center;
+            height: 100%;
+            z-index: 0;
+        }
+
         & article{
             background: black;
             box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -152,19 +166,30 @@
             height: 100%;
             z-index: 2;
 
-            &.go-left {
+            & .go-left {
                 transform: translateX(-100%) rotate(-20deg) !important;
                 transition: transform .3s ease, rotate .3s ease;
             }
 
-            &.go-rigth{
+            & .go-rigth{
                 transform: translateX(100%) rotate(20deg) !important;
                 transition: transform .3s ease, rotate .3s ease;
             }
 
-            &.reset{
+            & .reset{
                 transition: transform .3s ease;
                 transform: translateX(0) !important;
+            }
+
+            & .choice{
+                color: black;
+                border: 3px solid;
+                z-index: 9999;
+                position: absolute;
+                top: 16px;
+                right: 166px;
+                font-size: 24px;
+                font-weight: bold;
             }
 
             & img{

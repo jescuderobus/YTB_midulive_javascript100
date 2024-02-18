@@ -94,3 +94,10 @@ Las propiedades CSS se clasifican en varias categorías basadas en su función y
 
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images/Implementing_image_sprites_in_CSS
 - https://www.freecodecamp.org/espanol/news/elementos-semanticos-html5-explicados/
+
+
+## IDEAS
+
+- Hacer un tinder de libros, generar una lista de libros que son novedades para su lectura.
+
+
