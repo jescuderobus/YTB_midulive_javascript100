@@ -166,6 +166,8 @@ El css nesting de clases requiere que no haya separación entre el & y el . de l
 
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images/Implementing_image_sprites_in_CSS
 - https://www.freecodecamp.org/espanol/news/elementos-semanticos-html5-explicados/
+- https://www.youtube.com/watch?v=Q70IMS-Qnjk&ab_channel=CodewithAniaKub%C3%B3w
+
 
 
 ## IDEAS
